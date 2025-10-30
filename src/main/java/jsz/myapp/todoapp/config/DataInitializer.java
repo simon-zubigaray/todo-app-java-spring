@@ -1,6 +1,5 @@
 package jsz.myapp.todoapp.config;
 
-
 import jsz.myapp.todoapp.model.UserEntity;
 import jsz.myapp.todoapp.repository.UserRepository;
 import lombok.RequiredArgsConstructor;

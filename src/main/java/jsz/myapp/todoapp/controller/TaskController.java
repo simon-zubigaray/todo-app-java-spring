@@ -26,8 +26,8 @@ public class TaskController {
 
     @GetMapping("")
     @PreAuthorize("hasRole('ADMIN')")
-    public List<TaskEntity> getAll() {
-        return taskService.getAll();
+    public ResponseEntity<List<TaskEntity>> getAll() {
+        return ResponseEntity.ok(taskService.getAll());
     }
 
     @PostMapping("")
