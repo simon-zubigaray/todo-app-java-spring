@@ -13,34 +13,43 @@ Incluye endpoints para **registro, login, refresco de token** y un sistema de **
 - **JPA / Hibernate**  
 - **Validation API (Jakarta Validation)**  
 - **Maven**  
-- **Base de datos (MySQL / PostgreSQL / H2 para testing)**  
+- **Base de datos (MySQL)**  
 
 ---
 
 ## 📁 Estructura principal del proyecto
 
 ```
-src/main/java/com/tuempresa/tuprojecto/
+src/main/java/jsz/myapp/todoapp/
 │
+├── config/
+│   ├── DataInitializer.java/
+│   └── SwaggerConfig.java
 ├── controller/
+│   ├── dto/
+│   │   └── TaskDTO.java
 │   ├── AuthController.java
 │   └── TaskController.java
 │
 ├── dto/
 │   ├── AuthRequest.java
 │   ├── AuthResponse.java
-│   ├── RegisterRequest.java
-│   └── TaskDTO.java
+│   └── RegisterRequest.java 
 │
-├── entity/
+├── model/
+│   ├── UserEntity.java
 │   └── TaskEntity.java
 │
+├── repository/
+│   ├── UserRepository.java
+│   └── TaskRepository.java
+│  
 ├── service/
 │   ├── AuthService.java
 │   └── TaskService.java
 │
 └── security/
-    └── Configuración de JWT y filtros
+    └── Configuración de JWT y demas cosas
 ```
 
 ---
